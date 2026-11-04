@@ -19,7 +19,8 @@ namespace YMRA_SICI3029
 
         private void StaffForm_Load(object sender, EventArgs e)
         {
-
+            LeftManLabel.Visible = false;
+            RightManLabel.Visible = false;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -34,8 +35,35 @@ namespace YMRA_SICI3029
 
         private void PilatesStaffButton_Click(object sender, EventArgs e)
         {
-          pictureBox1.Image = Properties.Resources.LeftM
+            
 
+            if (LeftManLabel.Visible == false)
+            {
+                LeftManLabel.Visible = true;
+            }
+            else
+            {
+                LeftManLabel.Visible = false;
+            }
+            pictureBox1.Image = Properties.Resources.LeftMan;
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+        }
+
+        private void KarateStaffButton_Click(object sender, EventArgs e)
+        {
+            
+
+            if (RightManLabel.Visible == false)
+            {
+                RightManLabel.Visible = true;
+            }
+            else
+            {
+                RightManLabel.Visible = false;
+            }
+
+            pictureBox1.Image = Properties.Resources.RightMan;
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
         }
     }
 }

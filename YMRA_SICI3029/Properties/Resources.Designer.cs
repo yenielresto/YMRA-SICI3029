@@ -63,9 +63,29 @@ namespace YMRA_SICI3029.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LeftMan {
+            get {
+                object obj = ResourceManager.GetObject("LeftMan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pngtree_health_club_health_motion_healthcare_photo_image_904761 {
             get {
                 object obj = ResourceManager.GetObject("pngtree-health-club-health-motion-healthcare-photo-image_904761", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RightMan {
+            get {
+                object obj = ResourceManager.GetObject("RightMan", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
