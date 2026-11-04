@@ -66,6 +66,7 @@
             this.groupBox1.Controls.Add(this.StudentRadioButton);
             this.groupBox1.Controls.Add(this.ChildRadioButton);
             this.groupBox1.Controls.Add(this.saRadioButton);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(38, 89);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(222, 137);
@@ -79,7 +80,7 @@
             this.SeniorRadioButton.AutoSize = true;
             this.SeniorRadioButton.Location = new System.Drawing.Point(37, 100);
             this.SeniorRadioButton.Name = "SeniorRadioButton";
-            this.SeniorRadioButton.Size = new System.Drawing.Size(89, 17);
+            this.SeniorRadioButton.Size = new System.Drawing.Size(103, 17);
             this.SeniorRadioButton.TabIndex = 3;
             this.SeniorRadioButton.TabStop = true;
             this.SeniorRadioButton.Text = "S&enior Citizen";
@@ -91,7 +92,7 @@
             this.StudentRadioButton.AutoSize = true;
             this.StudentRadioButton.Location = new System.Drawing.Point(37, 77);
             this.StudentRadioButton.Name = "StudentRadioButton";
-            this.StudentRadioButton.Size = new System.Drawing.Size(62, 17);
+            this.StudentRadioButton.Size = new System.Drawing.Size(69, 17);
             this.StudentRadioButton.TabIndex = 2;
             this.StudentRadioButton.TabStop = true;
             this.StudentRadioButton.Text = "&Student";
@@ -102,7 +103,7 @@
             this.ChildRadioButton.AutoSize = true;
             this.ChildRadioButton.Location = new System.Drawing.Point(37, 54);
             this.ChildRadioButton.Name = "ChildRadioButton";
-            this.ChildRadioButton.Size = new System.Drawing.Size(120, 17);
+            this.ChildRadioButton.Size = new System.Drawing.Size(140, 17);
             this.ChildRadioButton.TabIndex = 1;
             this.ChildRadioButton.TabStop = true;
             this.ChildRadioButton.Text = "Chil&d (12 and under)";
@@ -113,7 +114,7 @@
             this.saRadioButton.AutoSize = true;
             this.saRadioButton.Location = new System.Drawing.Point(37, 31);
             this.saRadioButton.Name = "saRadioButton";
-            this.saRadioButton.Size = new System.Drawing.Size(95, 17);
+            this.saRadioButton.Size = new System.Drawing.Size(109, 17);
             this.saRadioButton.TabIndex = 0;
             this.saRadioButton.TabStop = true;
             this.saRadioButton.Text = "Standard &Adult";
@@ -124,6 +125,7 @@
             this.groupBox2.Controls.Add(this.PersonalTrainingCheckBox);
             this.groupBox2.Controls.Add(this.KarateCheckBox);
             this.groupBox2.Controls.Add(this.PilatesCheckBox);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(290, 89);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(210, 137);
@@ -136,7 +138,7 @@
             this.PersonalTrainingCheckBox.AutoSize = true;
             this.PersonalTrainingCheckBox.Location = new System.Drawing.Point(31, 78);
             this.PersonalTrainingCheckBox.Name = "PersonalTrainingCheckBox";
-            this.PersonalTrainingCheckBox.Size = new System.Drawing.Size(103, 17);
+            this.PersonalTrainingCheckBox.Size = new System.Drawing.Size(119, 17);
             this.PersonalTrainingCheckBox.TabIndex = 2;
             this.PersonalTrainingCheckBox.Text = "&Personal Trainer";
             this.PersonalTrainingCheckBox.UseVisualStyleBackColor = true;
@@ -146,7 +148,7 @@
             this.KarateCheckBox.AutoSize = true;
             this.KarateCheckBox.Location = new System.Drawing.Point(31, 55);
             this.KarateCheckBox.Name = "KarateCheckBox";
-            this.KarateCheckBox.Size = new System.Drawing.Size(57, 17);
+            this.KarateCheckBox.Size = new System.Drawing.Size(63, 17);
             this.KarateCheckBox.TabIndex = 1;
             this.KarateCheckBox.Text = "&Karate";
             this.KarateCheckBox.UseVisualStyleBackColor = true;
@@ -156,7 +158,7 @@
             this.PilatesCheckBox.AutoSize = true;
             this.PilatesCheckBox.Location = new System.Drawing.Point(31, 28);
             this.PilatesCheckBox.Name = "PilatesCheckBox";
-            this.PilatesCheckBox.Size = new System.Drawing.Size(57, 17);
+            this.PilatesCheckBox.Size = new System.Drawing.Size(64, 17);
             this.PilatesCheckBox.TabIndex = 0;
             this.PilatesCheckBox.Text = "&Pilates";
             this.PilatesCheckBox.UseVisualStyleBackColor = true;
@@ -166,6 +168,7 @@
             // 
             this.groupBox3.Controls.Add(this.MonthsTextbox);
             this.groupBox3.Controls.Add(this.label1);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(38, 251);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(222, 115);
@@ -185,7 +188,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(24, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 13);
+            this.label1.Size = new System.Drawing.Size(170, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Enter the Number of Months:";
             // 
@@ -197,6 +200,7 @@
             this.groupBox4.Controls.Add(this.MonthlyFeeLabel);
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Controls.Add(this.label2);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(290, 251);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(210, 115);
@@ -244,7 +248,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(48, 66);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 13);
+            this.label3.Size = new System.Drawing.Size(40, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Total:";
             // 
@@ -253,12 +257,13 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(15, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 13);
+            this.label2.Size = new System.Drawing.Size(80, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Monthly Fee:";
             // 
             // calculateButton
             // 
+            this.calculateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calculateButton.Location = new System.Drawing.Point(96, 393);
             this.calculateButton.Name = "calculateButton";
             this.calculateButton.Size = new System.Drawing.Size(74, 29);
@@ -269,6 +274,7 @@
             // 
             // clearButton
             // 
+            this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearButton.Location = new System.Drawing.Point(234, 393);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(74, 29);
@@ -278,6 +284,7 @@
             // 
             // exitButton
             // 
+            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.Location = new System.Drawing.Point(367, 393);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(74, 29);
@@ -288,14 +295,16 @@
             // FirstNameLabel
             // 
             this.FirstNameLabel.AutoSize = true;
+            this.FirstNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FirstNameLabel.Location = new System.Drawing.Point(62, 37);
             this.FirstNameLabel.Name = "FirstNameLabel";
-            this.FirstNameLabel.Size = new System.Drawing.Size(60, 13);
+            this.FirstNameLabel.Size = new System.Drawing.Size(71, 13);
             this.FirstNameLabel.TabIndex = 5;
             this.FirstNameLabel.Text = "&First Name:";
             // 
             // FirstNameTB
             // 
+            this.FirstNameTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FirstNameTB.Location = new System.Drawing.Point(128, 34);
             this.FirstNameTB.Name = "FirstNameTB";
             this.FirstNameTB.Size = new System.Drawing.Size(98, 20);
@@ -304,14 +313,16 @@
             // LastNameLabel
             // 
             this.LastNameLabel.AutoSize = true;
+            this.LastNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LastNameLabel.Location = new System.Drawing.Point(311, 37);
             this.LastNameLabel.Name = "LastNameLabel";
-            this.LastNameLabel.Size = new System.Drawing.Size(61, 13);
+            this.LastNameLabel.Size = new System.Drawing.Size(71, 13);
             this.LastNameLabel.TabIndex = 7;
             this.LastNameLabel.Text = "&Last Name:";
             // 
             // LastNameTB
             // 
+            this.LastNameTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LastNameTB.Location = new System.Drawing.Point(378, 37);
             this.LastNameTB.Name = "LastNameTB";
             this.LastNameTB.Size = new System.Drawing.Size(98, 20);
@@ -321,6 +332,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(547, 450);
             this.Controls.Add(this.LastNameTB);
             this.Controls.Add(this.LastNameLabel);

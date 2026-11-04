@@ -63,9 +63,9 @@ namespace YMRA_SICI3029.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Image {
+        internal static System.Drawing.Bitmap LeftMan {
             get {
-                object obj = ResourceManager.GetObject("Image", resourceCulture);
+                object obj = ResourceManager.GetObject("LeftMan", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace YMRA_SICI3029.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LeftMan {
+        internal static System.Drawing.Bitmap LOGO {
             get {
-                object obj = ResourceManager.GetObject("LeftMan", resourceCulture);
+                object obj = ResourceManager.GetObject("LOGO", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
