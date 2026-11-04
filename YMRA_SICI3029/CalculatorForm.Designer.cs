@@ -29,29 +29,31 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.SeniorRadioButton = new System.Windows.Forms.RadioButton();
+            this.StudentRadioButton = new System.Windows.Forms.RadioButton();
+            this.ChildRadioButton = new System.Windows.Forms.RadioButton();
+            this.saRadioButton = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.PersonalTrainingCheckBox = new System.Windows.Forms.CheckBox();
+            this.KarateCheckBox = new System.Windows.Forms.CheckBox();
+            this.PilatesCheckBox = new System.Windows.Forms.CheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.MonthsTextbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.monthlyLabel = new System.Windows.Forms.Label();
+            this.resultLabel = new System.Windows.Forms.Label();
             this.TotalLabel = new System.Windows.Forms.Label();
             this.MonthlyFeeLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.calculateButton = new System.Windows.Forms.Button();
+            this.clearButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
             this.FirstNameLabel = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.FirstNameTB = new System.Windows.Forms.TextBox();
             this.LastNameLabel = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.LastNameTB = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -60,10 +62,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton4);
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.SeniorRadioButton);
+            this.groupBox1.Controls.Add(this.StudentRadioButton);
+            this.groupBox1.Controls.Add(this.ChildRadioButton);
+            this.groupBox1.Controls.Add(this.saRadioButton);
             this.groupBox1.Location = new System.Drawing.Point(38, 89);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(222, 137);
@@ -72,55 +74,56 @@
             this.groupBox1.Text = "Type of Membership";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // radioButton4
+            // SeniorRadioButton
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(37, 100);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(89, 17);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "S&enior Citizen";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.SeniorRadioButton.AutoSize = true;
+            this.SeniorRadioButton.Location = new System.Drawing.Point(37, 100);
+            this.SeniorRadioButton.Name = "SeniorRadioButton";
+            this.SeniorRadioButton.Size = new System.Drawing.Size(89, 17);
+            this.SeniorRadioButton.TabIndex = 3;
+            this.SeniorRadioButton.TabStop = true;
+            this.SeniorRadioButton.Text = "S&enior Citizen";
+            this.SeniorRadioButton.UseVisualStyleBackColor = true;
+            this.SeniorRadioButton.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
-            // radioButton3
+            // StudentRadioButton
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(37, 77);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(62, 17);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "&Student";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.StudentRadioButton.AutoSize = true;
+            this.StudentRadioButton.Location = new System.Drawing.Point(37, 77);
+            this.StudentRadioButton.Name = "StudentRadioButton";
+            this.StudentRadioButton.Size = new System.Drawing.Size(62, 17);
+            this.StudentRadioButton.TabIndex = 2;
+            this.StudentRadioButton.TabStop = true;
+            this.StudentRadioButton.Text = "&Student";
+            this.StudentRadioButton.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // ChildRadioButton
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(37, 54);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(120, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Chil&d (12 and under)";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.ChildRadioButton.AutoSize = true;
+            this.ChildRadioButton.Location = new System.Drawing.Point(37, 54);
+            this.ChildRadioButton.Name = "ChildRadioButton";
+            this.ChildRadioButton.Size = new System.Drawing.Size(120, 17);
+            this.ChildRadioButton.TabIndex = 1;
+            this.ChildRadioButton.TabStop = true;
+            this.ChildRadioButton.Text = "Chil&d (12 and under)";
+            this.ChildRadioButton.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // saRadioButton
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(37, 31);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(95, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Standard &Adult";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.saRadioButton.AutoSize = true;
+            this.saRadioButton.Location = new System.Drawing.Point(37, 31);
+            this.saRadioButton.Name = "saRadioButton";
+            this.saRadioButton.Size = new System.Drawing.Size(95, 17);
+            this.saRadioButton.TabIndex = 0;
+            this.saRadioButton.TabStop = true;
+            this.saRadioButton.Text = "Standard &Adult";
+            this.saRadioButton.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.checkBox3);
-            this.groupBox2.Controls.Add(this.checkBox2);
-            this.groupBox2.Controls.Add(this.checkBox1);
+            this.groupBox2.Controls.Add(this.PersonalTrainingCheckBox);
+            this.groupBox2.Controls.Add(this.KarateCheckBox);
+            this.groupBox2.Controls.Add(this.PilatesCheckBox);
             this.groupBox2.Location = new System.Drawing.Point(290, 89);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(210, 137);
@@ -128,39 +131,40 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Options";
             // 
-            // checkBox3
+            // PersonalTrainingCheckBox
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(31, 78);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(103, 17);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "&Personal Trainer";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.PersonalTrainingCheckBox.AutoSize = true;
+            this.PersonalTrainingCheckBox.Location = new System.Drawing.Point(31, 78);
+            this.PersonalTrainingCheckBox.Name = "PersonalTrainingCheckBox";
+            this.PersonalTrainingCheckBox.Size = new System.Drawing.Size(103, 17);
+            this.PersonalTrainingCheckBox.TabIndex = 2;
+            this.PersonalTrainingCheckBox.Text = "&Personal Trainer";
+            this.PersonalTrainingCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // KarateCheckBox
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(31, 55);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(57, 17);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "&Karate";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.KarateCheckBox.AutoSize = true;
+            this.KarateCheckBox.Location = new System.Drawing.Point(31, 55);
+            this.KarateCheckBox.Name = "KarateCheckBox";
+            this.KarateCheckBox.Size = new System.Drawing.Size(57, 17);
+            this.KarateCheckBox.TabIndex = 1;
+            this.KarateCheckBox.Text = "&Karate";
+            this.KarateCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // PilatesCheckBox
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(31, 28);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(51, 17);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "&Yoga";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.PilatesCheckBox.AutoSize = true;
+            this.PilatesCheckBox.Location = new System.Drawing.Point(31, 28);
+            this.PilatesCheckBox.Name = "PilatesCheckBox";
+            this.PilatesCheckBox.Size = new System.Drawing.Size(57, 17);
+            this.PilatesCheckBox.TabIndex = 0;
+            this.PilatesCheckBox.Text = "&Pilates";
+            this.PilatesCheckBox.UseVisualStyleBackColor = true;
+            this.PilatesCheckBox.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.textBox1);
+            this.groupBox3.Controls.Add(this.MonthsTextbox);
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Location = new System.Drawing.Point(38, 251);
             this.groupBox3.Name = "groupBox3";
@@ -169,12 +173,12 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Membership Length";
             // 
-            // textBox1
+            // MonthsTextbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(37, 63);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(140, 20);
-            this.textBox1.TabIndex = 0;
+            this.MonthsTextbox.Location = new System.Drawing.Point(37, 63);
+            this.MonthsTextbox.Name = "MonthsTextbox";
+            this.MonthsTextbox.Size = new System.Drawing.Size(140, 20);
+            this.MonthsTextbox.TabIndex = 0;
             // 
             // label1
             // 
@@ -187,6 +191,8 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.monthlyLabel);
+            this.groupBox4.Controls.Add(this.resultLabel);
             this.groupBox4.Controls.Add(this.TotalLabel);
             this.groupBox4.Controls.Add(this.MonthlyFeeLabel);
             this.groupBox4.Controls.Add(this.label3);
@@ -197,6 +203,24 @@
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Membership Fees";
+            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
+            // 
+            // monthlyLabel
+            // 
+            this.monthlyLabel.AutoSize = true;
+            this.monthlyLabel.Location = new System.Drawing.Point(105, 34);
+            this.monthlyLabel.Name = "monthlyLabel";
+            this.monthlyLabel.Size = new System.Drawing.Size(0, 13);
+            this.monthlyLabel.TabIndex = 6;
+            // 
+            // resultLabel
+            // 
+            this.resultLabel.AutoSize = true;
+            this.resultLabel.Location = new System.Drawing.Point(103, 68);
+            this.resultLabel.Name = "resultLabel";
+            this.resultLabel.Size = new System.Drawing.Size(0, 13);
+            this.resultLabel.TabIndex = 5;
+            this.resultLabel.Click += new System.EventHandler(this.label4_Click);
             // 
             // TotalLabel
             // 
@@ -233,32 +257,33 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Monthly Fee:";
             // 
-            // button1
+            // calculateButton
             // 
-            this.button1.Location = new System.Drawing.Point(96, 393);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(74, 29);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "&Calculate";
-            this.button1.UseVisualStyleBackColor = true;
+            this.calculateButton.Location = new System.Drawing.Point(96, 393);
+            this.calculateButton.Name = "calculateButton";
+            this.calculateButton.Size = new System.Drawing.Size(74, 29);
+            this.calculateButton.TabIndex = 2;
+            this.calculateButton.Text = "&Calculate";
+            this.calculateButton.UseVisualStyleBackColor = true;
+            this.calculateButton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // clearButton
             // 
-            this.button2.Location = new System.Drawing.Point(234, 393);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(74, 29);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Clea&r";
-            this.button2.UseVisualStyleBackColor = true;
+            this.clearButton.Location = new System.Drawing.Point(234, 393);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(74, 29);
+            this.clearButton.TabIndex = 3;
+            this.clearButton.Text = "Clea&r";
+            this.clearButton.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // exitButton
             // 
-            this.button3.Location = new System.Drawing.Point(367, 393);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(74, 29);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "E&xit";
-            this.button3.UseVisualStyleBackColor = true;
+            this.exitButton.Location = new System.Drawing.Point(367, 393);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(74, 29);
+            this.exitButton.TabIndex = 4;
+            this.exitButton.Text = "E&xit";
+            this.exitButton.UseVisualStyleBackColor = true;
             // 
             // FirstNameLabel
             // 
@@ -269,12 +294,12 @@
             this.FirstNameLabel.TabIndex = 5;
             this.FirstNameLabel.Text = "&First Name:";
             // 
-            // textBox2
+            // FirstNameTB
             // 
-            this.textBox2.Location = new System.Drawing.Point(128, 34);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(98, 20);
-            this.textBox2.TabIndex = 6;
+            this.FirstNameTB.Location = new System.Drawing.Point(128, 34);
+            this.FirstNameTB.Name = "FirstNameTB";
+            this.FirstNameTB.Size = new System.Drawing.Size(98, 20);
+            this.FirstNameTB.TabIndex = 6;
             // 
             // LastNameLabel
             // 
@@ -285,25 +310,25 @@
             this.LastNameLabel.TabIndex = 7;
             this.LastNameLabel.Text = "&Last Name:";
             // 
-            // textBox3
+            // LastNameTB
             // 
-            this.textBox3.Location = new System.Drawing.Point(378, 37);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(98, 20);
-            this.textBox3.TabIndex = 8;
+            this.LastNameTB.Location = new System.Drawing.Point(378, 37);
+            this.LastNameTB.Name = "LastNameTB";
+            this.LastNameTB.Size = new System.Drawing.Size(98, 20);
+            this.LastNameTB.TabIndex = 8;
             // 
             // CalculatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(547, 450);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.LastNameTB);
             this.Controls.Add(this.LastNameLabel);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.FirstNameTB);
             this.Controls.Add(this.FirstNameLabel);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.clearButton);
+            this.Controls.Add(this.calculateButton);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -330,26 +355,28 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RadioButton SeniorRadioButton;
+        private System.Windows.Forms.RadioButton StudentRadioButton;
+        private System.Windows.Forms.RadioButton ChildRadioButton;
+        private System.Windows.Forms.RadioButton saRadioButton;
+        private System.Windows.Forms.Button calculateButton;
+        private System.Windows.Forms.Button clearButton;
+        private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.CheckBox PersonalTrainingCheckBox;
+        private System.Windows.Forms.CheckBox KarateCheckBox;
+        private System.Windows.Forms.CheckBox PilatesCheckBox;
+        private System.Windows.Forms.TextBox MonthsTextbox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label TotalLabel;
         private System.Windows.Forms.Label MonthlyFeeLabel;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label FirstNameLabel;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox FirstNameTB;
         private System.Windows.Forms.Label LastNameLabel;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox LastNameTB;
+        private System.Windows.Forms.Label monthlyLabel;
+        private System.Windows.Forms.Label resultLabel;
     }
 }
 
