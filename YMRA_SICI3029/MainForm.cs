@@ -16,5 +16,17 @@ namespace YMRA_SICI3029
         {
             InitializeComponent();
         }
+
+        private void staffFormButton_Click(object sender, EventArgs e)
+        {
+            StaffForm staffForm = new StaffForm();
+            staffForm.Show();
+        }
+
+        private void calculatorForm_Click(object sender, EventArgs e)
+        {
+            CalculatorForm calculatorForm = new CalculatorForm();
+            calculatorForm.Show();
+        }
     }
 }
