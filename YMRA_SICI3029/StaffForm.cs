@@ -26,5 +26,16 @@ namespace YMRA_SICI3029
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PilatesStaffButton_Click(object sender, EventArgs e)
+        {
+          
+
+        }
     }
 }

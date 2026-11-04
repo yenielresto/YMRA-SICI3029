@@ -69,5 +69,15 @@ namespace YMRA_SICI3029.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_11_04_123924 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2026-11-04 123924", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
