@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PilatesStaffButton = new System.Windows.Forms.Button();
             this.KarateStaffButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,24 +46,15 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::YMRA_SICI3029.Properties.Resources.pngtree_health_club_health_motion_healthcare_photo_image_904761;
-            this.pictureBox1.Location = new System.Drawing.Point(103, 59);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(376, 164);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // PilatesStaffButton
             // 
-            this.PilatesStaffButton.Location = new System.Drawing.Point(127, 272);
+            this.PilatesStaffButton.Location = new System.Drawing.Point(128, 272);
             this.PilatesStaffButton.Name = "PilatesStaffButton";
             this.PilatesStaffButton.Size = new System.Drawing.Size(121, 35);
             this.PilatesStaffButton.TabIndex = 2;
             this.PilatesStaffButton.Text = "Pilates Staff";
             this.PilatesStaffButton.UseVisualStyleBackColor = true;
+            this.PilatesStaffButton.Click += new System.EventHandler(this.PilatesStaffButton_Click);
             // 
             // KarateStaffButton
             // 
@@ -73,6 +64,17 @@
             this.KarateStaffButton.TabIndex = 3;
             this.KarateStaffButton.Text = "Karate Staff";
             this.KarateStaffButton.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::YMRA_SICI3029.Properties.Resources.Screenshot_2026_11_04_123924;
+            this.pictureBox1.Location = new System.Drawing.Point(92, 70);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(366, 164);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // StaffForm
             // 
@@ -94,8 +96,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button PilatesStaffButton;
         private System.Windows.Forms.Button KarateStaffButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -34,7 +34,7 @@ namespace YMRA_SICI3029
 
         private void PilatesStaffButton_Click(object sender, EventArgs e)
         {
-          
+          pictureBox1.Image = Properties.Resources.LeftM
 
         }
     }
