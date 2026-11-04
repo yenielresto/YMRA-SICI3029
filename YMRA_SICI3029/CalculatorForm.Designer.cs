@@ -281,6 +281,7 @@
             this.clearButton.TabIndex = 3;
             this.clearButton.Text = "Clea&r";
             this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // exitButton
             // 
@@ -291,6 +292,7 @@
             this.exitButton.TabIndex = 4;
             this.exitButton.Text = "E&xit";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // FirstNameLabel
             // 

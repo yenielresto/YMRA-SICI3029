@@ -124,5 +124,20 @@ namespace YMRA_SICI3029
         {
 
         }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            this.MonthsTextbox.Clear();
+            this.FirstNameTB.Clear();
+            this.LastNameTB.Clear();
+            this.monthlyLabel.Text = "";
+            this.resultLabel.Text = "";
+
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
