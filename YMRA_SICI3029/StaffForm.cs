@@ -35,16 +35,10 @@ namespace YMRA_SICI3029
 
         private void PilatesStaffButton_Click(object sender, EventArgs e)
         {
-            
+            LeftManLabel.Visible = true;
+            RightManLabel.Visible = false;
 
-            if (LeftManLabel.Visible == false)
-            {
-                LeftManLabel.Visible = true;
-            }
-            else
-            {
-                LeftManLabel.Visible = false;
-            }
+
             pictureBox1.Image = Properties.Resources.LeftMan;
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
         }
@@ -53,14 +47,8 @@ namespace YMRA_SICI3029
         {
             
 
-            if (RightManLabel.Visible == false)
-            {
-                RightManLabel.Visible = true;
-            }
-            else
-            {
-                RightManLabel.Visible = false;
-            }
+           RightManLabel.Visible = true;
+            LeftManLabel.Visible = false;
 
             pictureBox1.Image = Properties.Resources.RightMan;
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;

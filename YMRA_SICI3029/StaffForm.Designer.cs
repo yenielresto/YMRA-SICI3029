@@ -32,6 +32,8 @@
             this.PilatesStaffButton = new System.Windows.Forms.Button();
             this.KarateStaffButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.LeftManLabel = new System.Windows.Forms.Label();
+            this.RightManLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,7 +50,7 @@
             // 
             // PilatesStaffButton
             // 
-            this.PilatesStaffButton.Location = new System.Drawing.Point(128, 272);
+            this.PilatesStaffButton.Location = new System.Drawing.Point(400, 104);
             this.PilatesStaffButton.Name = "PilatesStaffButton";
             this.PilatesStaffButton.Size = new System.Drawing.Size(121, 35);
             this.PilatesStaffButton.TabIndex = 2;
@@ -58,29 +60,52 @@
             // 
             // KarateStaffButton
             // 
-            this.KarateStaffButton.Location = new System.Drawing.Point(337, 272);
+            this.KarateStaffButton.Location = new System.Drawing.Point(400, 177);
             this.KarateStaffButton.Name = "KarateStaffButton";
             this.KarateStaffButton.Size = new System.Drawing.Size(121, 35);
             this.KarateStaffButton.TabIndex = 3;
             this.KarateStaffButton.Text = "Karate Staff";
             this.KarateStaffButton.UseVisualStyleBackColor = true;
+            this.KarateStaffButton.Click += new System.EventHandler(this.KarateStaffButton_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::YMRA_SICI3029.Properties.Resources.Screenshot_2026_11_04_123924;
             this.pictureBox1.Location = new System.Drawing.Point(92, 70);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(366, 164);
+            this.pictureBox1.Size = new System.Drawing.Size(264, 164);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // LeftManLabel
+            // 
+            this.LeftManLabel.AutoSize = true;
+            this.LeftManLabel.Location = new System.Drawing.Point(157, 250);
+            this.LeftManLabel.Name = "LeftManLabel";
+            this.LeftManLabel.Size = new System.Drawing.Size(173, 39);
+            this.LeftManLabel.TabIndex = 4;
+            this.LeftManLabel.Text = "Name: Marcus Lamine\r\nYears of Experience: 25\r\nTraining Hours: 3:00 pm to 8:00 pm\r" +
+    "\n";
+            // 
+            // RightManLabel
+            // 
+            this.RightManLabel.AutoSize = true;
+            this.RightManLabel.Location = new System.Drawing.Point(157, 250);
+            this.RightManLabel.Name = "RightManLabel";
+            this.RightManLabel.Size = new System.Drawing.Size(173, 39);
+            this.RightManLabel.TabIndex = 5;
+            this.RightManLabel.Text = "Name: Christopher Thompson\r\nYears of Experience: 12\r\nTraining Hours: 7:00 am to 3" +
+    ":00 pm\r\n";
             // 
             // StaffForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(543, 336);
+            this.Controls.Add(this.RightManLabel);
+            this.Controls.Add(this.LeftManLabel);
             this.Controls.Add(this.KarateStaffButton);
             this.Controls.Add(this.PilatesStaffButton);
             this.Controls.Add(this.pictureBox1);
@@ -90,6 +115,7 @@
             this.Load += new System.EventHandler(this.StaffForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -99,5 +125,7 @@
         private System.Windows.Forms.Button PilatesStaffButton;
         private System.Windows.Forms.Button KarateStaffButton;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label LeftManLabel;
+        private System.Windows.Forms.Label RightManLabel;
     }
 }
