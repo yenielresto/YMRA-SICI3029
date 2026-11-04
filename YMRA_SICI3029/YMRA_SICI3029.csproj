@@ -106,6 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\LeftMan.png" />
+    <Content Include="Resources\LOGO.jpg" />
     <Content Include="Resources\RightMan.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
